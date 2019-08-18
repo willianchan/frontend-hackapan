@@ -21,76 +21,287 @@
 
 <style>
     .slide {
-        height: 100px;
-        width: 100px;
-        background-color: gray;
+        height: 120px;
+        width: 120px !important;
+        background-color: white;
+        border-radius: 15px;
+        border-width: 3px;
+        border-color: #66b2ff;
+        border-style: solid;
+        margin: 20px;
     }
+
     h2 {
-    text-align: center;
-    padding: 0px;
-    margin: 0px
-}
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        font-size: 30px;
+    }
+
+    .container-fluid {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .titulo {
+        background-color: #66b2ff;
+        padding: 20px;
+    }
+
+    .texto {
+        color: white;
+        max-width: 90vw;
+        margin: auto;
+        font-size: 1.30rem;
+    }
+
+    .col-centered {
+        float: none;
+        margin: 0 auto;
+    }
+
+    body {
+        background-color: gainsboro;
+    }
+
+    .preco {
+        color: #66b2ff;
+    }
+
+    .input {
+        height: 60px;
+        width: 280px !important;
+        background-color: white;
+        border-radius: 15px;
+        border-width: 3px;
+        border-color: #66b2ff;
+        border-style: solid;
+        margin: 20px;
+    }
+
+    ::-webkit-input-placeholder {
+        text-align: center;
+    }
 </style>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img class="d-inline-block align-top" width="30" src="./img/logo.png">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Perfil</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Simulação</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <div class="container-fluid">
-        <h2>Buscar por preço</h2>
-        <section class="limites slider">
-            <div class="slide">
-                <p>teste</p>
-                <h3>20</h2>
-                    <h3>MIL</h2>
-            </div>
-
-            <div class="slide">
-                <div class="row">
-                    <div class="col-sm-12 float-left">
-                        <h2>Até</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 float-left">
-                        <h2>20</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 float-left">
-                        <h2>MIL</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slide">
-                <p>teste3</p>
-            </div>
-
-            <div class="slide">
-                <p>teste4</p>
-            </div>
-
-            <div class="slide">
-                <p>teste5</p>
-            </div>
-
-            <div class="slide">
-                <p>teste6</p>
-            </div>
-
-            <div class="slide">
-                <p>teste7</p>
-            </div>
-
-            <div class="slide">
-                <p>teste8</p>
-            </div>
-
-        </section>
-
+        <div class="titulo text-center">
+            <h3 class="texto">Qual o valor do automóvel que deseja financiar?</h3>
+        </div>
     </div>
 
-    <script type="text/javascript" src="carros.js"></script>
-    <!-- JavaScript (Opcional) -->
+    <section class="limites slider mt-5">
+        <div class="slide">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Até</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="preco">10</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>MIL</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Até</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="preco">20</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>MIL</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Até</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="preco">30</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>MIL</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Até</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="preco">40</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>MIL</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Até</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="preco">50</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>MIL</h2>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Até</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="preco">60</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>MIL</h2>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Até</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="preco">70</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>MIL</h2>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Até</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="preco">80</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>MIL</h2>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Até</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="preco">100</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>MIL</h2>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Até</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="preco">150</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>MIL</h2>
+                </div>
+            </div>
+        </div>
+
+        <input class="slide input" placeholder="Informe outros valores">
+
+    </section>
+
+
+
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -102,6 +313,8 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+    <script type="text/javascript" src="./carros.js"></script>
 </body>
 
 </html>
