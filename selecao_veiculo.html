@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Seleção de Veículo</title>
+</head>
+
+<style>
+    .titulo {
+        background-color: #66b2ff;
+        padding: 15px;
+    }
+
+    .texto {
+        color: white;
+        margin: auto;
+        font-size: 1.60rem;
+    }
+
+    body {
+        background-color: gainsboro;
+    }
+
+    .fa {
+        font-size: 60px;
+        opacity: 0.5;
+        color: black;
+    }
+
+    .col-centered {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .card-horizontal {
+        display: flex;
+        flex: 1 1 auto;
+    }
+
+    .card-img {
+        width: 160px;
+    }
+
+    .card-body {
+        padding-bottom: 0px;
+    }
+
+    .img-square-wrapper {
+        height: 130px;
+        line-height: 130px;
+    }
+
+    .img-square-wrapper img {
+        vertical-align: middle;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img class="d-inline-block align-top " width="30" src="./img/logo.png">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Perfil</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Simulação</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row titulo text-center">
+            <div class="col-2 float-left">
+                <a href="">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+            <div class="col-10 float-right mt-3">
+                <h3 class="texto">Selecione o Veículo</h3>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="card-img" src="./img/onix.png">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Onix Hatch Automático</h6>
+                            <p class="card-text">2018/2019</p>
+                            <h6 class="card-title">R$ 32.000,00</h6>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                                style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="card-img" src="./img/fit.webp">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Fit CVT</h6>
+                            <p class="card-text">2019</p>
+                            <h6 class="card-title">R$ 72.000,00</h6>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                                style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-3">
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="card-img" src="./img/celta.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Celta Manual</h6>
+                            <p class="card-text">2015</p>
+                            <h6 class="card-title">R$ 33.000,00</h6>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                                style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-3 mb-4">
+                <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <img class="card-img" src="./img/prisma.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">Prisma Sedan</h6>
+                            <p class="card-text">2015/2016</p>
+                            <h6 class="card-title">R$ 38.000,00</h6>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                                style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
