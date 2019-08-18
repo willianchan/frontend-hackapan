@@ -11,7 +11,7 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
+
     <title>Seleção de Veículo</title>
 </head>
 
@@ -67,16 +67,24 @@
         margin-top: 12px;
     }
 
-    /* select {
+    select {
         border: none;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
         -ms-appearance: none;
-        /* get rid of default appearance for IE8, 9 and 10*/
     }
 
-    */
+    p {
+        margin: 0px;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 250px
+    }
 </style>
 
 <body>
@@ -168,15 +176,30 @@
         </div>
 
         <div class="row mt-4">
-                <div class="col-12">
-                    <h4 class="text-center">Probabilidade de Aprovação</h4>
+            <div class="col-12">
+                <p><b>Tipo de Bem:</b> 0KM </p>
+                <p><b>Valor do bem:</b>R$ 50.000,00</p>
+                <p><b>Entrada: </b>R$ 25.500,00</p>
+                <p><b>Ano de Fabricação: </b>2016</p>
+                <p><b>Valor do IOF:</b> R$ 501,36</p>
+                <p><b>CET ao mês: </b>2,88%</p>
+                <p><b>CET ao ano: </b>40,65%</p>
+                <p><b>Taxa de juros efetiva ao mês: </b>2,50%</p>
+                <p><b>Validade simulação:</b> 2 dias</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-9">
+                <div class="btn-group mt-5 mb-3 col-centered text-center center">
+                    <a href="./analisando.html" class="btn btn-primary pesquisar center">Pesquisar</a>
                 </div>
             </div>
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"

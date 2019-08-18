@@ -11,7 +11,7 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
+
     <title>Hackapan</title>
 </head>
 
@@ -42,6 +42,30 @@
         font-size: 12px;
         text-align: center;
     }
+
+    .texto {
+        font-size: 20px;
+        color: #00c5ff;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        max-width: 250px
+    }
+
+    .texto2 {
+        color: white;
+        font-size: 20px
+        
+    }
+    .pesquisar{
+        border-radius: 15px;
+        font-size: 20px;
+        width: 200px;
+    }
 </style>
 
 <body>
@@ -53,46 +77,23 @@
             </div>
         </div>
 
-        <div class="row cadastro mt-5">
-            <div class="col-sm-12 col-md-6 col-xl-4 col-centered">
-                <form>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-                    </div>
-                    <div class="btn-group w-100">
-                        <button type="submit" class="btn btn-light w-100 mr-3 border rounded"><a href="./cadastro.html">Cadastre-se</a></button>
-                        <button type="submit" class="btn btn-light w-100 border rounded"><a href="./education.html">Entrar</a></button>
-                    </div>
-                </form>
+        <div class="row mt-4">
+            <div class="col-8 col-centered">
+                <h5 class="texto text-center">Uhuuul! Sua simulação foi aprovada.</h5>
             </div>
         </div>
 
-        <div class="row mt-3">
-            <div class="col-sm-12 col-md-6 col-centered text-center">
-                <a class="w-100" href="url">Esqueci minha senha</a>
+        <div class="row mt-4">
+            <div class="col-8 col-centered">
+                <h5 class="texto2 text-center">A proposta será efetivada após o envio da assinatura em até dois dias
+                    úteis. Caso contrário a mesma não terá validade.</h5>
             </div>
         </div>
-
-        <div class="row entrar mt-4">
-            <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 col-centered">
-                <button type="submit" class="btn btn-primary w-100">Entrar com o Facebook</button>
-                <button type="submit" class="btn btn-light w-100 mt-2">Entrar com o Google</button>
-            </div>
-        </div>
-
-        <div class="row mt-2">
-            <div class="col-sm-12 col-md-6 col-centered text-center">
-                <a class="politica" href="url">Politica de privacidade e termos de uso</a>
-            </div>
-        </div>
-
     </div>
 
-
+    <div class="btn-group mt-5 center">
+        <a href="" class="btn btn-primary pesquisar">Imprimir Proposta</a>
+    </div>
 
 
 
